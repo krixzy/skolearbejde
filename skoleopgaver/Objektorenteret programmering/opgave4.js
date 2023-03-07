@@ -61,6 +61,23 @@ class car {
        x.remove()
     }
 }
+
+
+
+
+
+
+class Motorbike extends car{
+    #hp
+    constructor(model, age, color, price, km, photo, hp){
+        super(model, age, color, price, km, photo)
+        this.#hp = hp
+    }
+}
+let bike = new Motorbike("Yamaha", 2020, "black", 100000, 200, "hahahah", 400)
+console.log(bike)
+
+
 let tesla = new car("Tesla 3", 2022, "matsort", 400000, 10000, "Tesla.png")
 let tesla2 = new car("Tesla Y", 2023, "sort", 300000, 20000, "Tesla.png")
 
@@ -68,8 +85,8 @@ let tesla2 = new car("Tesla Y", 2023, "sort", 300000, 20000, "Tesla.png")
 tesla.createCar(tesla)
 tesla2.createCar(tesla2)
 let newCar = (x, y)=>{
-arrayOfCars.push(new car(inputArray[0].value, inputArray[1].value, inputArray[2].value, inputArray[3].value, inputArray[4].value, inputArray[5].value))
-arrayOfCars[arrayOfCars.length - 1].createCar()
+    let thisCar = new car(inputArray[0].value, inputArray[1].value, inputArray[2].value, inputArray[3].value, inputArray[4].value, inputArray[5].value).createCar()
+    arrayOfCars.push(thisCar)
 
 }
 
