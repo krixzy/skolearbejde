@@ -1,0 +1,46 @@
+body{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+#catText{
+    margin-top: 250px;
+    font-size: 30px;
+    margin-bottom: 100px;
+}
+
+div{
+   
+ width: 100%;
+}
+div p{
+    font-size: 20px;
+    
+}
+.boxClass{
+    margin-top: 50px;
+    width: 100px;
+    height: 60px;
+    font-size: 30px;
+    
+    background-color: orange;
+} 
+#buttons text{
+    font-size: 50px;
+}
+#resultText{
+    margin-top: 50px;
+    font-size: 50px;
+}
+
+/* button:hover {
+    background-color: orangered;
+} */
+#catPop {
+    width: auto; 
+     height: 600px;
+    /* position: absolute;
+    top: 50px;
+    left: 50px;
+    height: 100%; */
+}

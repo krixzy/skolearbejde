@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Banko spiller</title>
+</head>
+<body>
+    <div class="topHjørne">
+        <p>Lav bankoplader:</p>
+        <input type="number" id="amount" placeholder="Skriv antal du vil have">
+        <button onclick= amountGenerater() >Lav plader</button>
+    </div>
+    <div class="buttons">
+        <p class="Button">Træk et tal:</p>
+        <button class="Button" onclick="numberCheck()">Tilfældig tal</button>
+        </div>
+        <div class="talTræk">
+            <p>Tallet er:</p>
+            <p id="trukkettal">  </p>
+        </div>
+    
+    <div id="pladerDiv">
+        
+    
+    </div>
+</body>
+<script src="index.js"></script>
+<!-- <script src="bankoSide/generator.js"></script>
+<script src="bankoSide/seedrandom.js"></script> -->
+</html>
