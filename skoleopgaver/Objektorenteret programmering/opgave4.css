@@ -25,11 +25,12 @@ img{
 }
 .newCar{
   text-align: center;
-  justify-content: center;
+  justify-content: space-evenly;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  width: 20em;
+  width: auto;
+  flex-wrap: wrap;
   background-image: linear-gradient(orange, rgb(247, 211, 143));
 }
 body{
