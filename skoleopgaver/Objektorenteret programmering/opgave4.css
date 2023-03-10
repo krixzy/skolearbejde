@@ -7,8 +7,7 @@
 }
 .inputs{
     display: flex;
-  
-    width: 16em;
+    gap: 10px;
     justify-content: space-between;
     padding: 0.5em;
 }
@@ -22,6 +21,7 @@
 img{
   width: 20em;
   height: auto;
+  max-height: 13em;
 }
 .newCar{
   text-align: center;
@@ -41,10 +41,64 @@ body{
   flex-direction: column;
 }
 .carClass{
+  color: white;
   height: 480px;
   display: flex;
   flex-direction: column;
   align-items: center ;
   border-style: solid;
   border-color: black;
+  width: 23em;
+  justify-content: space-around;
+  background-image: linear-gradient(blue, black);
+}
+.textDiv p{
+  font-size: 1.2em;
+  font-family:'Courier New', Courier, monospace;
+}
+.bikeClass{
+  color: white;
+  height: 480px;
+  display: flex;
+  flex-direction: column;
+  align-items: center ;
+  border-style: solid;
+  border-color: black;
+  width: 23em;
+  justify-content: space-around;
+  background-image: linear-gradient(blue, black);
+}
+.gokartClass{
+  color: white;
+  height: 480px;
+  display: flex;
+  flex-direction: column;
+  align-items: center ;
+  border-style: solid;
+  border-color: black;
+  width: 23em;
+  justify-content: space-around;
+  background-image: linear-gradient(blue, black);
+}
+.buttons{
+  display: flex;
+  gap: 10em;
+  width: 80em;
+
+  flex-wrap: wrap;
+  height: auto;
+  justify-content: space-between;
+
+
+  
+}
+.buttons button{
+  width: 8em;
+  height: 3em;
+  color: white;
+  background-color: black;
+  font-size: 1em;
+}
+.buttons button:hover{
+  color: orange;
 }

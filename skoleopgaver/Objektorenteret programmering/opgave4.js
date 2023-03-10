@@ -18,7 +18,7 @@ let showAllOnly = true
 
 
 
-let types = ` <div id="inputs" >
+let types = `  <div id="inputs" >
 <div id="types" class="buttons">
     <div class="types">
     <button id="car" onclick="carCreate()">Tilføj bil</button>
@@ -26,10 +26,10 @@ let types = ` <div id="inputs" >
     <button id="gokart" onclick="gokartCreate()">Tilføj gokart</button>
     </div>
     <div class="show">
-    <button id="showBiller" onclick="showCars()">vis kun biler</button>
-    <button id="showCykler" onclick="showBikes()">vis kun cykler</button>
-    <button id="showGokart" onclick="showGokarts()">vis kun gokarts</button>
-    <button id="showAll" onclick="showAll()">Vis alle</button>
+    <button id="showCars" onclick="showCars(), displayColor()">vis kun biler</button>
+    <button id="showBikes" onclick="showBikes(), displayColor()">vis kun cykler</button>
+    <button id="showGokart" onclick="showGokarts(), displayColor()">vis kun gokarts</button>
+    <button id="showAll" onclick="showAll(), displayColor()">Vis alle</button>
     </div>
    </div>
 </div>`
@@ -99,7 +99,7 @@ class Car {
         buttom.addEventListener("click", ()=>{this.removeCar(car)})
         buttomDiv.appendChild(buttom)
         
-        return [textDiv, p5, car]
+        return [textDiv, p5, car, buttom]
        
         
 
@@ -131,6 +131,7 @@ class Gokart extends Car{
        let textDiv = super.createCar();
         textDiv[2].className = "gokartClass"
         textDiv[1].remove()
+        textDiv[3].textContent = "Slet gokart"
 
         let p4 = document.createElement("p")
         p4.textContent = (`Hæstekræfter: ${this.#hp}`)
@@ -158,6 +159,7 @@ createBike(){
     let textDiv = super.createCar()
     textDiv[2].className = "bikeClass"
     textDiv[1].remove()
+    textDiv[3].textContent = "Slet cykel"
 
     let p4 = document.createElement("p")
     p4.textContent = (`Antal gear: ${this.#power}`)
@@ -423,6 +425,7 @@ let showAll = () =>{
 }
 
 let displayColor = ()=>{
+    console.log("test")
     let car = document.getElementById("showCars").style
     let bike = document.getElementById("showBikes").style
     let gokart = document.getElementById("showGokart").style
