@@ -195,7 +195,7 @@ let newGokart = ()=>{
 
 let newBike = ()=>{
     inputArray = Array.from(document.getElementsByClassName("inp"))
-    new Bike(inputArray[0].value, inputArray[1].value, inputArray[2].value, inputArray[3].value, inputArray[4].value, inputArray[5].value, inputArray[6].value).createBike()
+    new Bike(inputACarray[0].value, inputArray[1].value, inputArray[2].value, inputArray[3].value, inputArray[4].value, inputArray[5].value, inputArray[6].value).createBike()
     document.getElementById("newCar").remove()
     inputDiv.innerHTML = types
 
